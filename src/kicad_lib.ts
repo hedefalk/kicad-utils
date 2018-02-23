@@ -287,7 +287,7 @@ export class Draw {
 	}
 }
 
-abstract class DrawObject {
+export abstract class DrawObject {
 	/**
 	 * Unit identification for multiple parts per package.  Set to 0 if the
 	 * item is common to all units.

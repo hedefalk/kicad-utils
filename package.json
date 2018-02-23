@@ -3,6 +3,7 @@
   "version": "0.2.0",
   "description": "",
   "main": "dist/src/kicad-utils.js",
+  "types": "dist/src/kicad-utils.d.ts",
   "bin": {
     "kicad-utils": "dist/src/kicad-utils_cui.js"
   },
@@ -35,6 +36,7 @@
     "webpack": "^3.4.1"
   },
   "scripts": {
+    "build": "tsc",
     "watch": "./node_modules/.bin/nf start",
     "test-one": "mocha --compilers ts:espower-typescript/guess ",
     "test": "mocha --compilers ts:espower-typescript/guess test/**/*.ts # /* mocha must be installed as global... */ ",

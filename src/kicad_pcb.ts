@@ -2203,7 +2203,7 @@ export class NetClass {
 	}
 }
 
-abstract class BoardItem {
+export abstract class BoardItem {
 	pos: Point = new Point(0, 0);
 	layer: number = 0;
 	tstamp: number = 0;
