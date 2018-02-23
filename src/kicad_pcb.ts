@@ -1824,12 +1824,15 @@ export class PCB {
 			} else
 			if (token.is(Token.width)) {
 				target.lineWidth = this.parseBoardUnits("target line width");
+				this.needRIGHT();
 			} else
 			if (token.is(Token.layer)) {
 				target.layer = this.parseBoardItemLayer("layer");
+				this.needRIGHT();
 			} else
 			if (token.is(Token.tstamp)) {
 				target.tstamp = this.parseHex("tstamp");
+				this.needRIGHT();
 			} else {
 				this.expecting(token,
 					Token.x,
